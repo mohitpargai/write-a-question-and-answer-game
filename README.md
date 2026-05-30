@@ -12,3 +12,16 @@ Built a quiz-based Question and Answer Game with score tracking, answer validati
 - `index.html`: game layout
 - `styles.css`: design
 - `app.js`: Hindi questions, answers, timer, lifelines, music
+
+How to Play
+Start the game by clicking the Start Quiz button.
+Read each question carefully.
+Select the answer you think is correct.
+Click Next to move to the next question.
+Continue until all questions are completed.
+Your score will be calculated automatically based on correct answers.
+View your final score and performance at the end of the game.
+Click Play Again to restart the quiz and improve your score.
+
+Objective:
+Answer as many questions correctly as possible to achieve the highest score.
