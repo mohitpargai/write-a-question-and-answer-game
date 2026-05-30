@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="hi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ज्ञान मंच</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <section class="stage" aria-label="Quiz game">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">हिंदी प्रश्नोत्तरी</p>
+            <h1>ज्ञान मंच</h1>
+          </div>
+          <div class="controls">
+            <button id="soundBtn" class="icon-btn" type="button" aria-label="संगीत चालू करें" title="संगीत">
+              <span id="soundIcon">♪</span>
+            </button>
+            <button id="restartBtn" class="icon-btn" type="button" aria-label="फिर से शुरू करें" title="रीस्टार्ट">↻</button>
+          </div>
+        </header>
+
+        <div class="hero-ring" aria-hidden="true">
+          <div class="ring ring-one"></div>
+          <div class="ring ring-two"></div>
+          <div class="center-gem">?</div>
+        </div>
+
+        <section class="question-panel">
+          <div class="status-row">
+            <div class="pill" id="questionCount">प्रश्न 1 / 10</div>
+            <div class="timer" id="timer">30</div>
+            <div class="pill" id="currentPrize">₹1,000</div>
+          </div>
+          <h2 id="questionText">लोड हो रहा है...</h2>
+          <div class="answers" id="answers"></div>
+          <p class="feedback" id="feedback" role="status" aria-live="polite"></p>
+        </section>
+
+        <section class="actions" aria-label="Game actions">
+          <button id="fiftyBtn" type="button">50:50</button>
+          <button id="hintBtn" type="button">संकेत</button>
+          <button id="nextBtn" type="button" disabled>अगला</button>
+        </section>
+      </section>
+
+      <aside class="sidebar" aria-label="Prize ladder">
+        <h2>इनाम सीढ़ी</h2>
+        <ol id="prizeList" class="prize-list"></ol>
+      </aside>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
